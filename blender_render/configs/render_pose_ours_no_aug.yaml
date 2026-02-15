@@ -1,0 +1,60 @@
+hydra:
+  run:
+    dir: .
+  output_subdir: null
+
+number: 0
+sample_video: false
+folder: null
+split: gtest
+dir_name:
+name: wo_aug/57.npz
+name_list: ['wo_aug/24.npz']
+mean: false
+number_of_samples: 1
+fact: 1
+jointstype: null
+gender: neutral
+
+tmp_path: /tmp/
+
+logger_level: INFO
+
+denoising: true
+
+# oldrender=true gray scale background
+# oldrender=false transparent background, materials a bit different
+oldrender: true
+
+res: high
+# "high", "med", "low"
+
+# for video: 1/8 frame rendered
+downsample: false
+
+infolder: true
+
+gt: false
+canonicalize: true
+exact_frame: 0.5
+num: 8
+
+vid_ext: webm
+
+always_on_floor: false
+
+mode: video
+
+defaults:
+  - /path@path
+  - _self_
+
+faces_path: ${path.deps}/smplh/smplh.faces
+
+ind: 8
+# behave
+# npz_folder: bl_501_interact_r16_df_mean0_bm1_hsplit1_clean1cid0_uw1_vw008_cw02_bias0_cw0_newscheme/abcdsamples_bl_501_interact_r16_df_mean0_bm1_hsplit1_clean1cid0_uw1_vw008_cw02_bias0_cw0_newscheme_000416000_seed10_behave_correct_mesh_woguidance_fullseq/results_0
+# grab
+# npz_folder: bl_501_interact_r16_df_mean0_bm1_hsplit1_clean1cid0_uw1_vw008_cw02_bias0_cw0_newscheme/abcdsamples_bl_501_interact_r16_df_mean0_bm1_hsplit1_clean1cid0_uw1_vw008_cw02_bias0_cw0_newscheme_000416000_seed10_grab_mesh_woguidance_fullseq/results_0
+# omomo
+npz_folder: bl_501_interact_r16_df_mean0_bm1_hsplit1_clean1cid0_uw1_vw008_cw02_bias0_cw0_newscheme/abcdsamples_bl_501_interact_r16_df_mean0_bm1_hsplit1_clean1cid0_uw1_vw008_cw02_bias0_cw0_newscheme_000416000_seed10_omomo_correct_mesh_woguidance_fullseq/results_0
